@@ -1,21 +1,23 @@
 {
   "name": "localstorage",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A better way to save data locally on the browser.",
   "license": "MIT",
-  "author": "",
+  "author": "Bismak Yamoah",
   "type": "commonjs",
   "main": "dist/index.js",
-  "directories": {
-    "example": "examples"
-  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "dev": "tsc --watch",
     "test": "jest",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "preversion": "npm run clean && npm run build",
+    "version": "npm publish"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",

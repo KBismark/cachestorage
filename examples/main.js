@@ -73,7 +73,7 @@ async function example() {
     email: "john@example.com",
   };
 
-//   await storeUser(user);
+  // await storeUser(user);
 
   const storedUser = await getUser();
   if (storedUser) {

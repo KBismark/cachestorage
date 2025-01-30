@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/cache-local-storage.svg)](https://badge.fury.io/js/cache-local-storage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Downloads](https://img.shields.io/npm/dt/cache-local-storage)](https://www.npmjs.com/package/cache-local-storage)
-[![Coverage Status](https://coveralls.io/repos/github/olajhidey/cache-local-storage/badge.svg?branch=main)](https://coveralls.io/github/olajhidey/cache-local-storage?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/KBismark/cache-local-storage/badge.svg?branch=master)](https://coveralls.io/github/KBismark/cache-local-storage?branch=master)    
 
 # Cache Local Storage
 A better way to save data locally on the browser. Think about using the browser's cache system as your local storage space in your applications.     
@@ -46,9 +46,9 @@ const storage = new CacheLocalStorage({
 
 
 
-// Store user data with schema validation 
+// Store user data without schema validation 
 async function storeUser(user) {
-    const result = await storage.setItem(user.id, user, userSchema);
+    const result = await storage.setItem(user.id, user);
     if (result.success) {
         console.log("User stored:", result.data);
     } else {
@@ -66,7 +66,7 @@ async function getUser(userId) {
 
 // Update fields in user data
 async function updateUserName(userId, newName) {
-    const result = await storage.updateItem(userId, { name: newName }, userSchema);
+    const result = await storage.updateItem(userId, { name: newName });
     if (result.success) {
         console.log("User updated:", result.data);
     } else {
