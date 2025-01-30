@@ -1,5 +1,5 @@
 {
-  "name": "localstorage",
+  "name": "cache-local-storage",
   "version": "0.1.0",
   "description": "A better way to save data locally on the browser.",
   "license": "MIT",
@@ -15,7 +15,6 @@
     "build:watch": "tsc --watch",
     "dev": "tsc --watch",
     "test": "jest",
-    "prepare": "npm run build",
     "preversion": "npm run clean && npm run build",
     "version": "npm publish"
   },
