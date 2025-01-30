@@ -1,6 +1,6 @@
 {
-  "name": "cache-local-storage",
-  "version": "0.1.0",
+  "name": "cachestorage",
+  "version": "0.2.0",
   "description": "A better way to save data locally on the browser.",
   "license": "MIT",
   "author": "Bismak Yamoah",
