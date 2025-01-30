@@ -1,11 +1,24 @@
 {
-  "name": "cachestorage",
-  "version": "0.2.0",
+  "name": "@codigex/cachestorage",
+  "version": "0.3.0",
   "description": "A better way to save data locally on the browser.",
+  "keywords": [
+    "local-storage",
+    "browser-storage"
+  ],
+  "homepage": "https://github.com/KBismark/cachestorage#readme",
+  "bugs": {
+    "url": "https://github.com/KBismark/cachestorage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBismark/cachestorage.git"
+  },
   "license": "MIT",
   "author": "Bismak Yamoah",
   "type": "commonjs",
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -16,8 +29,9 @@
     "dev": "tsc --watch",
     "test": "jest",
     "preversion": "npm run clean && npm run build",
-    "version": "npm publish"
+    "version": "npm publish --access public"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "jest": "^29.7.0",

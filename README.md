@@ -1,7 +1,7 @@
-[![npm version](https://badge.fury.io/js/cachestorage.svg)](https://badge.fury.io/js/cachestorage)
+[![npm version](https://badge.fury.io/js/@codigex/cachestorage.svg)](https://badge.fury.io/js/@codigex/cachestorage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dt/cachestorage)](https://www.npmjs.com/package/cachestorage)
-[![Coverage Status](https://coveralls.io/repos/github/KBismark/cachestorage/badge.svg?branch=master)](https://coveralls.io/github/KBismark/cachestorage?branch=master)    
+[![Downloads](https://img.shields.io/npm/dt/@codigex/cachestorage)](https://www.npmjs.com/package/@codigex/cachestorage)
+[![Coverage Status](https://coveralls.io/repos/github/KBismark/@codigex/cachestorage/badge.svg?branch=master)](https://coveralls.io/github/KBismark/@codigex/cachestorage?branch=master)    
 
 # Cache Local Storage
 A better way to save data locally on the browser. Think about using the browser's cache system as your local storage space in your applications.     
@@ -28,13 +28,13 @@ Use Cache Local Storage to store data like user settings, user preferences, user
 
 ## Installation
 ```bash
-npm install cachestorage
+npm install @codigex/cachestorage
 ```    
 
 
 ## Basic usage
 ```js
-import { CacheLocalStorage } from 'cachestorage';
+import { CacheLocalStorage } from '@codigex/cachestorage';
 
 
 // Initialize storage with options
@@ -111,7 +111,7 @@ async function example() {
 
 ## Usage with more advanced features
 ```js
-import { CacheLocalStorage } from 'cachestorage';
+import { CacheLocalStorage } from '@codigex/cachestorage';
 
 // Initialize storage with options
 const storage = new CacheLocalStorage({
