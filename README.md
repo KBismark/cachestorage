@@ -34,7 +34,7 @@ npm install @codigex/cachestorage
 
 ## Basic usage
 ```js
-import { CacheLocalStorage } from '@codigex/cachestorage';
+import CacheLocalStorage from '@codigex/cachestorage';
 
 
 // Initialize storage with options
@@ -111,7 +111,7 @@ async function example() {
 
 ## Usage with more advanced features
 ```js
-import { CacheLocalStorage } from '@codigex/cachestorage';
+import CacheLocalStorage from '@codigex/cachestorage';
 
 // Initialize storage with options
 const storage = new CacheLocalStorage({
