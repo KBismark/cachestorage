@@ -1,5 +1,5 @@
-[![npm version](https://badge.fury.io/js/@codigex/cachestorage.svg)](https://badge.fury.io/js/@codigex/cachestorage)
-[![Downloads](https://img.shields.io/npm/dt/@codigex/cachestorage)](https://www.npmjs.com/package/@codigex/cachestorage)
+[![npm version](https://badge.fury.io/js/@codigex%2Fcachestorage.svg?icon=si%3Anpm&icon_color=%23f4f0f0)](https://badge.fury.io/js/@codigex%2Fcachestorage)
+[![Downloads](https://img.shields.io/npm/dt/@codigex%2Fcachestorage)](https://www.npmjs.com/package/@codigex%2Fcachestorage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Cache Local Storage
