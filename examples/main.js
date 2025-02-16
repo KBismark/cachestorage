@@ -1,7 +1,6 @@
 // import CacheLocalStorage from "../dist/index.js"; // For local testing
 // const CacheLocalStorage = window.exports.default;
 
-console.log(exports);
 
 // Initialize schema for validation
 const userSchema = {
