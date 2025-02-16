@@ -8,10 +8,10 @@ A better way to save data locally on the browser. Think about using the browser'
 
 ## Why Cache Local Storage?
 If browsers can cache resources like images, javascript files, and many more, why not use it to store your application data? 
-Cache Local Storage is a library that helps you store and retrieve data in the browser's cache system. It is more persistent than local storage and has a larger storage capacity. It also provides features like schema validation, compression, and encryption. No need for server interverntion to cache data, it is all done on the client side. Store, retrieve, update, and delete data with ease. 
+Cache Local Storage is a library that helps you store and retrieve data in the browser's cache system. Compared to local storage or session storage, It has a larger storage capacity and also asynchronous. It also provides features like schema validation, compression, and encryption. No need for server interverntion to cache data, it is all done on the client side. Store, retrieve, update, and delete data with ease. 
 
 
-Use Cache Local Storage to store data like user settings, user preferences, user data, and many more. It is a great way to store data that should persist even when the browser is closed. With Cache Local Storage, web pages can have state persistence across sessions.    
+Use Cache Local Storage to store data like user settings, user preferences, user data, and many more. It is a great way to store data that should persist even when the browser is closed.    
 
 
 ## Features
