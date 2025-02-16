@@ -20,9 +20,7 @@ Use Cache Local Storage to store data like user settings, user preferences, user
 - **Encryption**: Encrypt data before storing it. *Optional*
 - **Cache Duration**: Set a duration for how long data should be stored. Defaults to a year.
 - **More Persistent**: Data is stored in the browser's cache system which is more persistent than local storage.
-- **Larger Storage Capacity**:  Set a maximum size for the storage. Defaults to 50MB. 
-- **Service Worker Drop-in Available**:  Serve `cls.js` at the root of your domain and Cache Local Storage works off the main thread.    
-- **In-memory Cache with Service Worker**:  `cls.js` also uses an in-memory cache for faster access to data.    
+- **Larger Storage Capacity**:  Set a maximum size for the storage. Defaults to 50MB.   
  
 
 ## Installation
@@ -31,10 +29,12 @@ npm install @codigex/cachestorage
 ```    
 
 
-## Basic usage
+## How to use
+First, import the library and initialize it with options. Then you can store, retrieve, update, and delete data with ease.    
+
+
 ```js
 import CacheLocalStorage from '@codigex/cachestorage';
-
 
 // Initialize storage with options
 const storage = new CacheLocalStorage({
@@ -43,9 +43,14 @@ const storage = new CacheLocalStorage({
   cacheDuration: 86400, // 1 day - Default is 1 year
 });
 
+```    
 
 
-// Store user data without schema validation 
+### Storing data without schema validation
+
+```js
+
+// Store user data without schema validation
 async function storeUser(user) {
     const result = await storage.setItem(user.id, user);
     if (result.success) {
@@ -55,13 +60,23 @@ async function storeUser(user) {
     }
 }
 
+```
 
+### Getting data       
+
+```js
 // Retrieve user data
 async function getUser(userId) {
     const result = await storage.getItem(userId);
     return  result.data || null;
 }
 
+```
+
+### Updating data
+Update data in the cache. Uses `setItem` internally.    
+
+```js
 
 // Update fields in user data
 async function updateUserName(userId, newName) {
@@ -73,6 +88,12 @@ async function updateUserName(userId, newName) {
     }
 }
 
+```
+
+### Check storage stats
+You can check the storage stats to know how much space is used and how much is available.    
+
+```js
 
 // Check storage stats
 async function checkStorage() {
@@ -81,6 +102,10 @@ async function checkStorage() {
   console.log(`Available: ${(stats.available / 1024 / 1024).toFixed(2)}MB`);
 }
 
+```
+
+### Basic usage
+```js
 
 // Example usage
 async function example() {
@@ -103,12 +128,14 @@ async function example() {
     await checkStorage();
 }
 
-```    
 
+```
 
 
 
 ## Usage with more advanced features
+You can use schema validation, compression, and encryption with Cache Local Storage.    
+
 ```js
 import CacheLocalStorage from '@codigex/cachestorage';
 
