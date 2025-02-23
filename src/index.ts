@@ -527,6 +527,26 @@ class CacheLocalStorage {
     }
   }
 
+  public async removeItem(key: string) {
+    try {
+      const cache = await caches.open(this.namespace);
+      await cache.delete(this.baseUrl + key);
+      this.cacheStore.delete(key);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  public async clear() {
+    try {
+      await caches.delete(this.namespace);
+      this.cacheStore.clear();
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
   /**
    * Get storage statistics
    */
